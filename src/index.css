@@ -56,29 +56,28 @@ body,
 
 
 
-/* === Responsive layout additions (doesn't affect theme or colors) === */
 
-/* Tablets: If you want to auto-collapse or slim sidebar, adjust margin if needed */
+
 @media (max-width: 900px) {
   .content {
-    /* If you use a collapsed sidebar of 80px width, use 80px here */
+    
     margin-left: 80px !important;
-    /* If you dynamically style in React, you can skip this */
+    
   }
 }
 
-/* Mobiles: Stack vertically, sidebar acts as topnav or is hidden */
+
 @media (max-width: 600px) {
   .app {
     flex-direction: column !important;
   }
   .content {
     margin-left: 0 !important;
-    margin-top: 0;           /* Remove if your topbar is fixed */
+    margin-top: 0;          
     width: 100vw;
     min-height: 100vh;
   }
-  /* Optional: hide sidebar - add a .sidebar selector if you need to hide (for custom sidebars) */
+  
 }
 
 
